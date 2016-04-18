@@ -2,11 +2,100 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  <header class="main-header">
+      <div class="container">
+          <nav class="main-navigation">
+              <ul>
+                  <li><a href="#">Информация</a></li>
+                  <li><a href="#">Фото и видео</a></li>
+                  <li><a href="#"><img srs="http://placehold.it/150x100" alt="На главную"></a></li>
+                  <li><a href="#">Карта штата</a></li>
+                  <li><a href="#">Гостины</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <main class="container">
+      <div class="index-logo">
+          <img srs="http://placehold.it/150x100" alt="Логотип">
+      </div>
+      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="features">
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="features-item">
+              <b class="features-name">Настоящий городок -№1-</b>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="features-picture">
+              <img srs="http://placehold.it/150x100" alt="Дом">
+          </div>
+          <div class="features-item">
+              <b class="features-name">Жилье</b>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="features-item">
+              <b class="features-name">Еда</b>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="features-item">
+              <b class="features-name">Сувениры</b>
+              <p>Не только китайского, но и местного производства</p>
+          </div>
+          <div class="features-picture">
+              <img srs="http://placehold.it/150x100" alt="Каньон">
+          </div>
+          <div class="features-item">
+              <b class="features-name">Там есть мост дьявола -№2-</b>
+              <p>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
+          </div>
+          <div class="features-item">
+              <b class="features-name">Небольшая площадь -№3-</b>
+              <p>Все достопримичательности находяться очень близко</p>
+          </div>
+          <div class="features-item">
+              <b class="features-name">Красивая дорога -№4-</b>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="features-item">
+              <b class="features-name">Мало туристов -№5-</b>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+      </section>
+      <div class="booking">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+      <div class="map">
+          <img srs="http://placehold.it/150x100" alt="Карта">
+      </div>
+      <div class="booking-form">
+          <p>Поиск гостиницы в Седоне</p>
+            <form action="#" method="post">
+              <input type="date" name="date_in" value="" placeholder="Дата заезда">
+              <input type="date" name="date_out" value="" placeholder="Дата выезда">
+              <input type="text" name="adults" value="" placeholder="Взрослые">
+              <input type="text" name="children" value="" placeholder="Дети">
+              <button type="submit" class="btn">Найти</button>
+            </form>
+      </div>
+  </main>
+      <footer class="main-footer">
+       <div class="container">
+         <article class="footer-contacts">
+          <a href="#">#visitSedona</a>
+          </article>
+        <article class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </article>
+        <article class="footer-copyright">
+          <p>WEB SITE BY<a href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" alt="HTML Academy"</a></p>
+        </article>
+      </div>
+    </footer>
   </body>
 </html>
