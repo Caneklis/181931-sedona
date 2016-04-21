@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
-</head>
-<body>
-    <div class="main-container">
-        <header class="main-header">
-            <nav class="main-navigation">
-                <ul>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li class="logo-nav"><a href="#"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="#">Гостины</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="filters">
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li class="logo-nav"><a href="#"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
+                        <li><a href="#">Карта штата</a></li>
+                        <li><a href="#">Гостины</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
                 <form action="#" method="get">
                     <div class="filter-infrastructure">   
-                        <p>Инфраструктура</p>
+                        <div class="form-title">Инфраструктура</div>
                         <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
                         <label for="infrastructure-field">Бассейн</label>
                         <input type="checkbox" name="infrastructure" id="infrastructure-field">
@@ -30,7 +30,7 @@
                         <label for="infrastructure-field">Wi-Fi</label>
                     </div>
                     <div class="filter-type">
-                        <p>Тип жилья</p>
+                        <div class="form-title">Тип жилья</div>
                         <input type="checkbox" name="house-type" id="house-type" checked>
                         <label for="house-type-field">Гостиница</label>
                         <input type="checkbox" name="producers" id="house-type-field" checked>
@@ -39,88 +39,86 @@
                         <label for="house-type-field">Апартаменты</label>
                     </div>
                     <div class="filter-cost">    
-                        <p>Стоимость в сутки (р)</p>
+                        <div class="form-title">Стоимость в сутки (р)</div>
                         <input type="range" min="0" max="3000" step="1" value="50">
                         <input type="submit" value="Показать">
                     </div>
                 </form>
-            </div>    
-            <div class="sort-panel">
-                <div>Найдено:<span>3</span></div>
-                <p>Сортировка:</p>
-                <ul>
-                   <li><a href="#">По цене</a></li>
-                   <li><a href="#">По типу</a></li>
-                   <li><a href="#">По рейтингу</a></li>
-                </ul>
-                <span class="increase">треугольник вверх</span>
-                <span class="decrease">треугольник вниз</span>
-            </div>
-            <div class="results">       
-                <article class="house">
-                    <div class="house-picture">
-                        <img src="http://placehold.it/150x100" alt="Фото жилья">
-                    </div>
-                    <div class="house-description">
-                        <h2 class="house-name">Amara Resort & Spa</h2>
-                        <div class="more">
-                            <p>Гостиница</p>
-                            <a href="#">Подробнее</a>    
+                <div class="sort-panel">
+                    <div class="form-found">Найдено:<span>3</span></div>
+                    <div class="sorting">Сортировка:</div>
+                    <ul>
+                       <li><a href="#">По цене</a></li>
+                       <li><a href="#">По типу</a></li>
+                       <li><a href="#">По рейтингу</a></li>
+                    </ul>
+                    <div class="increase">треугольник вверх</div>
+                    <div class="decrease">треугольник вниз</div>
+                </div>
+                <div class="results">       
+                    <article class="house">
+                        <div class="house-picture">
+                            <img src="http://placehold.it/150x100" alt="Фото жилья">
                         </div>
-                        <div class="book">
-                            <p>от 3500 руб.</p>
-                            <a href="#">Забронировать</a>
+                        <div class="house-description">
+                            <h2 class="house-name">Amara Resort & Spa</h2>
+                            <div class="more">
+                                <p>Гостиница</p>
+                                <a href="#">Подробнее</a>    
+                            </div>
+                            <div class="book">
+                                <p>от 3500 руб.</p>
+                                <a href="#">Забронировать</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="house-rating">
-                        <img src="http://placehold.it/150x100" alt="Звезда">
-                        <p class="rating">Рейтинг 8,5</p>
-                    </div>
-                </article>
-                <article class="house">
-                    <div class="house-picture">
-                        <img src="http://placehold.it/150x100" alt="Фото жилья">
-                    </div>
-                    <div class="house-description">
-                        <h2 class="house-name">Desert Quail Inn</h2>
-                       <div class="more">
-                            <p>Мотель</p>
-                            <a href="#">Подробнее</a>    
+                        <div class="house-rating">
+                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <p class="rating">Рейтинг 8,5</p>
                         </div>
-                        <div class="book">
-                            <p>от 2000 руб.</p>
-                            <a href="#">Забронировать</a>
+                    </article>
+                    <article class="house">
+                        <div class="house-picture">
+                            <img src="http://placehold.it/150x100" alt="Фото жилья">
                         </div>
-                    </div>
-                    <div class="house-rating">
-                        <img src="http://placehold.it/150x100" alt="Звезда">
-                        <p class="rating">Рейтинг 8,9</p>
-                    </div>
-                </article>
-                <article class="house">
-                    <div class="house-picture">
-                        <img src="http://placehold.it/150x100" alt="Фото жилья">
-                    </div>
-                    <div class="house-description">
-                        <h2 class="house-name">Villas at Poco Diablo</h2>
-                        <div class="more">
-                            <p>Апартаменты</p>
-                            <a href="#">Подробнее</a>    
+                        <div class="house-description">
+                            <h2 class="house-name">Desert Quail Inn</h2>
+                           <div class="more">
+                                <p>Мотель</p>
+                                <a href="#">Подробнее</a>    
+                            </div>
+                            <div class="book">
+                                <p>от 2000 руб.</p>
+                                <a href="#">Забронировать</a>
+                            </div>
                         </div>
-                        <div class="book">
-                            <p>от 4000 руб.</p>
-                            <a href="#">Забронировать</a>
+                        <div class="house-rating">
+                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <p class="rating">Рейтинг 8,9</p>
                         </div>
-                    </div>
-                    <div class="house-rating">
-                        <img src="http://placehold.it/150x100" alt="Звезда">
-                        <p class="rating">Рейтинг 9,2</p>
-                    </div>
-                </article>      
-            </div>           
-        </main>
-        <footer class="main-footer">
-            <div class="container">
+                    </article>
+                    <article class="house">
+                        <div class="house-picture">
+                            <img src="http://placehold.it/150x100" alt="Фото жилья">
+                        </div>
+                        <div class="house-description">
+                            <h2 class="house-name">Villas at Poco Diablo</h2>
+                            <div class="more">
+                                <p>Апартаменты</p>
+                                <a href="#">Подробнее</a>    
+                            </div>
+                            <div class="book">
+                                <p>от 4000 руб.</p>
+                                <a href="#">Забронировать</a>
+                            </div>
+                        </div>
+                        <div class="house-rating">
+                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <p class="rating">Рейтинг 9,2</p>
+                        </div>
+                    </article>      
+                </div>           
+            </main>
+            <footer class="main-footer">
                 <article class="footer-contacts">
                     <a href="#">#visitSedona</a>
                 </article>
@@ -134,8 +132,7 @@
                     <a href="https://htmlacademy.ru">
                     <img src="http://placehold.it/150x100" alt="HTML Academy"></a>
                 </article>
-            </div>
-        </footer>
-    </div>
-</body>
+            </footer>
+        </div>
+    </body>
 </html>
