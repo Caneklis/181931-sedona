@@ -11,19 +11,112 @@ h1 {
     font-size: 21px;
     line-height: 26px;
     text-transform:uppercase;
-    font-weight:bold
+    font-weight:bold;
+    text-align: center;
+    float: left;
+    margin-left: 312px;
+    width: 576px;
 }
 
 h2 {
     font-size: 30px;
     line-height: 24px;
     text-transform:uppercase;
-    font-weight:bold
+    font-weight:bold;
+    width: 100%;
 }
 
+p {
+    display: block;
+    float: left;
+}
 b {
     font-size: 21px;
     line-height: 21px;
     text-transform:uppercase;
     font-weight:bold
+}
+.main-container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 #c8c8c8;
+    background: #fff;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    width: 100%;
+    height: 56px;
+    margin: 0 auto;
+}
+
+.main-navigation {
+    float: left;
+    width: 100%;
+    height: 56px;
+}
+
+.index-intro {
+    width: 100%;
+    height: 540px;
+    background: #ffffff url("../img/background photo.jpg") no-repeat 50%;
+}
+
+.features {
+    width: 100%;
+}
+
+.feature-row {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 33,3%;
+    height: 256px;
+
+}
+
+.features-picture {
+    float: left;
+    width: 800px;
+    height: 256px;
+}
+
+.features-description {
+    float: left;
+    width: 400px;
+    height: 256px;
+}
+
+.features-description p {
+    display: block;
+    padding: 74px;
+}
+.booking {
+    float: left;
+    width: 100%;
+}
+
+.main-footer {
+    width: 100%;
+}
+
+.footer-contacts {
+    float: left;
+    width: 33,3%;
+}
+
+.footer-copyright {
+    float: left;
+    width: 33,3%;
+}
+
+.footer-social {
+    float: left;
+    width: 33,3%;
 }
