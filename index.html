@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -18,21 +19,22 @@
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main clearfix>
                 <div class="index-intro"></div>
-                <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <h1>Седона — небольшой городок в Аризоне,<br>
+                заслуживающий большего!</h1>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-                <section class="features">
+                <section class="features clearfix">
                     <div class="feature-row">
                         <div class="features-description">
-                            <b class="features-name">Настоящий городок -№1-</b>
+                            <b class="features-name">Настоящий<br>городок<br>-№1-</b>
                             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
                         <div class="features-picture">
                             <img src="img/true-city.jpg" alt="Дом">
                         </div>
                     </div>
-                    <div class="feature-row">
+                    <div class="feature-row plus">
                         <div class="features-description">
                             <b class="features-name">Жилье</b>
                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -51,40 +53,41 @@
                             <img src="img/bridge-of-devil.jpg" alt="Каньон">
                         </div>
                         <div class="features-description">
-                            <b class="features-name">Там есть мост дьявола -№2-</b>
+                            <b class="features-name">Там есть мост дьявола<br>-№2-</b>
                             <p>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
                         </div>
                     </div>
                     <div class="feature-row">   
                         <div class="features-description">
-                            <b class="features-name">Небольшая площадь -№3-</b>
+                            <b class="features-name">Небольшая площадь<br>-№3-</b>
                             <p>Все достопримичательности находяться очень близко</p>
                         </div>
                         <div class="features-description">
-                            <b class="features-name">Красивая дорога -№4-</b>
+                            <b class="features-name">Красивая дорога<br>-№4-</b>
                             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                         </div>
                         <div class="features-description">
-                            <b class="features-name">Мало туристов -№5-</b>
+                            <b class="features-name">Мало туристов<br>-№5-</b>
                             <p>Большинство едет в Гранд Каньон и толпится там</p>
                         </div>
                     </div>
                 </section>
                 <div class="booking">
                     <h2>Заинтересовались?</h2>
-                    <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-                </div>
-                <div class="map">
-                    <img src="img/map.jpg" alt="Карта">
+                    <p>Укажите предпологаемые даты поездки,<br>
+                    и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <form class="booking-form" action="#" method="post">
-                    <div>Поиск гостиницы в Седоне</div>
+                    <div class="form-name">Поиск гостиницы в Седоне</div>
                     <label>Дата заезда<input type="date" name="date_in" value="" placeholder="Дата заезда"></label>
                     <label>Дата выезда<input type="date" name="date_out" value="" placeholder="Дата выезда"></label>
                     <label>Взрослые<input type="text" name="adults" value="" placeholder="Взрослые"></label>
                     <label>Дети<input type="text" name="children" value="" placeholder="Дети"></label>
                     <button type="submit" class="btn">Найти</button>
                 </form>
+                <div class="map">
+                    <img src="img/map.jpg" alt="Карта">
+                </div>
             </main>
             <footer class="main-footer">
                 <article class="footer-contacts">
