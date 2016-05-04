@@ -2,31 +2,38 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
     text-transform:uppercase;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
     text-transform:uppercase;
-    font-weight:bold;
     text-align: center;
 }
 
 h2 {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 30px;
     line-height: 24px;
+    font-weight: 700;
     text-transform:uppercase;
-    font-weight:bold;
+}
+
+a {
+    text-decoration: none;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 
 p {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
 }
 b {
     font-size: 21px;
@@ -63,52 +70,85 @@ b {
 }
 .main-navigation ul {
     list-style: none;
+    font-size: 0;
     margin: 0;
     padding: 0;
 }
 .main-navigation li {
     display: inline-block;
-    vertical-align: top;
     float: left;
+    vertical-align: top;
+    font-size: 14px;
     width: 20%;
     min-height: 56px;
 }
 
+.main-navigation a {
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+.logo-nav {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
 .index-intro {
     width: 100%;
-    min-height: 540px;
-    background: #ffffff url("../img/background photo.jpg") no-repeat 50%;
+    height: 508px;
+    background: #ffffff url("../img/background photo.jpg") no-repeat 50% 21%;
+    padding-bottom: 48px;
 }
 
 .feature-row {
+    width: 100%;
     float: left;
-    min-height: 256px;
-    margin: 0;
+    background-color: #eeeeee;
 
+}
+
+.picture {
+    background-color: 81b3d2;    
+}
+
+.plus {
+    background-color: #ffffff;   
+}
+
+.plus b {
+    padding-top: 184px;
+}
+.plus p {
+    padding-bottom: 85px;    
 }
 
 .features-picture {
     float: left;
-    width: 66%;
+    width: 66.7%;
+    min-height: 256px;
     margin: 0;
-    height: 256px;
 }
 
 .features-description {
     float: left;
     width: 33.3%;
+    min-height: 256px;
+}
+
+.features-description b {
+    text-align: center;
 }
 
 .features-description p {
-    display: block;
-    width: 290px;
-    margin-left: 60px;
     text-align: center;
+    padding-top: 30px;
 }
 
 .features-name {
     display: block;
     text-align: center;
+    padding-top: 55px;
 }
 
 .booking {
@@ -130,7 +170,7 @@ b {
     left: 50%;
     width: 576px;
     height: 481px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .form-name {
@@ -144,6 +184,9 @@ b {
 
 .main-footer {
     margin: 0 auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 36px;
     width: 100%;
     height: 120px;
 }
@@ -161,5 +204,151 @@ b {
 .footer-copyright {
     float: right;
     width: 33.3%;
+}
+
+.search-filters {
+    position: relative;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 32px;
+    min-height: 217px;
+    background: #40759f url("../img/filter_background.jpg") no-repeat;
+    color: #ffffff;
+}
+
+.filter-infrastructure {
+    position: absolute;
+    width: 240px;
+}
+
+.filter-type {
+    position: absolute;
+    left: 440px;
+    width: 240px;
+}
+
+.filter-cost {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hotels-found {
+    display: inline-block;
+    vertical-align: top;
+    width: 135px;
+}
+
+.sorting {
+    display: inline-block;
+    vertical-align: top;
+    width: 135px;
+}
+
+.sorting ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sorting li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 10%;
+}
+
+.sorting a {
+    display: block;
+    text-decoration: none;
+}
+
+.sort {
+    display: inline-block;
+}
+
+.results {
+    
+}
+.sort-panel {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.house-picture {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    width: 135px;
+}
+
+.house-description {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 700px;
+}
+
+.house-name {
+    margin: 0;
+    padding-bottom: 18px;
+}
+
+.house-rating {
+    display: inline-block;
+    vertical-align: top;
+    width: 135px;
+}
+
+.more {
+    display: inline-block;
+}
+
+.more h2{
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.book {
+    display: inline-block;
+}
+
+.more a {
+    display: block;
+    margin-top: 18px;
+    padding: 8px 17px;
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.book a {
+    display: block;
+    margin-top: 18px;
+    padding: 8px 17px;
+    background-color: #766357;
+    color: #ffffff;
+}
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.house {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-infrastructure input {
+    display: block;
+    float: left;
+}
+
+.form-title {
+    float: right;
 }
 
