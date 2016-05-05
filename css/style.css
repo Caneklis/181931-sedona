@@ -295,19 +295,19 @@ b {
 
 .filter-infrastructure {
     float: left;
-    margin-left: -800px;
+    margin-left: -1000px;
     padding-top: 30px;
 }
 
 .filter-type {
     float: left;
-    margin-left: -600px;
+    margin-left: -800px;
     padding-top: 30px;
 }
 
 .filter-cost {
     float: right;
-    margin-right: -100px;
+    
 }
 
 .hotels-found {
