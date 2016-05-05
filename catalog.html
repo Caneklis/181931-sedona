@@ -6,15 +6,16 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/symbols-sedona.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
             <header class="main-header">
                 <nav class="main-navigation">
-                    <ul>
+                    <ul class="clearfix">
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
-                        <li class="logo-nav"><a href="#"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
+                        <li class="logo-nav"><a href="index.html"><img src="img/logo.png" alt="На главную"></a></li>
                         <li><a href="#">Карта штата</a></li>
                         <li><a href="#">Гостины</a></li>
                     </ul>
@@ -43,11 +44,11 @@
                     <div class="filter-cost">    
                         <div class="form-title">Стоимость в сутки (р)</div>
                         <input type="range" min="0" max="3000" step="1" value="50">
-                        <input type="submit" value="Показать">
+                        <button type="submit" class="btn">Показать</button>
                     </div>
                 </form>
                 <div class="sort-panel">
-                    <div class="hotels-found">Найдено:<span>3</span></div>
+                    <div class="hotels-found">Найдено: <span>3</span></div>
                     <div class="sorting">Сортировка:</div>
                         <ul>
                            <li><a href="#">По цене</a></li>
@@ -55,8 +56,8 @@
                            <li><a href="#">По рейтингу</a></li>
                         </ul>
                     <div class="sort">
-                        <span class="increase">треугольник вверх</span>
-                        <span class="decrease">треугольник вниз</span>
+                        <span class="icon-up-dir"></span>
+                        <span class="icon-down-dir"></span>
                     </div>    
                 </div>
                 <div class="results">       
@@ -76,7 +77,10 @@
                             </div>
                         </div>
                         <div class="house-rating">
-                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
                             <p class="rating">Рейтинг 8,5</p>
                         </div>
                     </article>
@@ -96,7 +100,8 @@
                             </div>
                         </div>
                         <div class="house-rating">
-                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
                             <p class="rating">Рейтинг 8,9</p>
                         </div>
                     </article>
@@ -116,7 +121,9 @@
                             </div>
                         </div>
                         <div class="house-rating">
-                            <img src="http://placehold.it/150x100" alt="Звезда">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
                             <p class="rating">Рейтинг 9,2</p>
                         </div>
                     </article>      
@@ -127,9 +134,9 @@
                     <a href="#">#visitSedona</a>
                 </article>
                 <article class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn icon-twitter" href="#"></a>
+                    <a class="social-btn icon-facebook" href="#"></a>
+                    <a class="social-btn icon-youtube" href="#"></a>
                 </article>
                 <article class="footer-copyright">
                     <span>WEB SITE BY</span>

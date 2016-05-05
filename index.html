@@ -6,17 +6,18 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/symbols-sedona.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
             <header class="main-header">
                 <nav class="main-navigation">
-                    <ul>
+                    <ul class="clearfix">
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
                         <li class="logo-nav"><a href="index.html"><img src="img/logo.png" alt="На главную"></a></li>
                         <li><a href="#">Карта штата</a></li>
-                        <li><a href="#">Гостины</a></li>
+                        <li><a href="catalog.html">Гостины</a></li>
                     </ul>
                 </nav>
             </header>
@@ -32,9 +33,7 @@
                             <p>-№1-<br>Седона - не аттракцион для туристов,<br>
                             там течет своя жизнь</p>
                         </div>
-                        <div class="features-picture">
-                            <img src="img/true-city.jpg" width="100%" height: 256px alt="Дом">
-                        </div>
+                        <div class="features-picture town"></div>
                     </div>
                     <div class="feature-row plus">
                         <div class="features-description">
@@ -53,9 +52,7 @@
                         </div>    
                     </div>
                     <div class="feature-row">
-                        <div class="features-picture">
-                            <img src="img/bridge-of-devil.jpg" alt="Каньон">
-                        </div>
+                        <div class="features-picture canyon"></div>
                         <div class="features-description picture">
                             <b class="features-name">Там есть мост дьявола</b>
                             <p>-№2-<br>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
@@ -83,10 +80,30 @@
                 </div>
                 <form class="booking-form" action="#" method="post">
                     <div class="form-name">Поиск гостиницы в Седоне</div>
-                    <label>Дата заезда<input type="date" name="date_in" value="" placeholder="Дата заезда"></label>
-                    <label>Дата выезда<input type="date" name="date_out" value="" placeholder="Дата выезда"></label>
-                    <label>Взрослые<input type="text" name="adults" value="" placeholder="Взрослые"></label>
-                    <label>Дети<input type="text" name="children" value="" placeholder="Дети"></label>
+                    <div class="field">
+                        <label for="date_in">Дата заезда</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="date_in" name="date_in" value="" placeholder="">
+                    </div>
+                    <div class="field">
+                        <label for="date_out">Дата выезда</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" id="date_out" name="date_out" value="" placeholder="Дата выезда">
+                    </div>
+                    <div class="field">
+                        <label for="adults">Взрослые</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="adults" name="adults" value="" placeholder="Взрослые">
+                    </div>
+                    <div class="field">
+                        <label for="children">Дети</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="children" name="children" value="" placeholder="Дети">
+                    </div>
                     <button type="submit" class="btn">Найти</button>
                 </form>
                 <div class="map">
@@ -98,9 +115,9 @@
                     <a href="#">#visitSedona</a>
                 </article>
                 <article class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn icon-twitter" href="#"></a>
+                    <a class="social-btn icon-facebook" href="#"></a>
+                    <a class="social-btn icon-youtube" href="#"></a>
                 </article>
                 <article class="footer-copyright">
                     <span>WEB SITE BY</span>

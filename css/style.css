@@ -27,7 +27,7 @@ h2 {
 
 a {
     text-decoration: none;
-    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 p {
@@ -58,8 +58,7 @@ b {
 }
 
 .main-header {
-    min-height: 56px;
-    margin: 0;
+    margin-bottom: -20px;
     padding: 0;
 }
 
@@ -75,25 +74,36 @@ b {
     padding: 0;
 }
 .main-navigation li {
-    display: inline-block;
     float: left;
-    vertical-align: top;
     font-size: 14px;
     width: 20%;
-    min-height: 56px;
+}
+
+.main-navigation li:last-child {
+    text-align: right;
+}
+
+.main-navigation li:nth-child(4) {
+    text-align: right;
 }
 
 .main-navigation a {
     display: block;
     padding-top: 15px;
+    padding-bottom: 21px;
     text-decoration: none;
+    font-weight: 700;
+    color: #000000;
 }
 
 .logo-nav {
-    position: relative;
-    z-index: 10;
     text-align: center;
 }
+
+.logo-nav a {
+    padding: 0;
+}
+
 .index-intro {
     width: 100%;
     height: 508px;
@@ -126,13 +136,19 @@ b {
 .features-picture {
     float: left;
     width: 66.7%;
-
     margin: 0;
- 
+}
+.town {
+    height: 256px;
+    background: url("../img/bridge-of-devil.jpg") no-repeat;
+    background-size: cover;
 }
 
-.features-picture img{
-    display: block;
+
+.canyon {
+    height: 256px;
+    background: url("../img/bridge-of-devil.jpg") no-repeat;
+    background-size: cover;
 }
 
 .features-description {
@@ -171,109 +187,184 @@ b {
 }
 
 .booking-form {
-    position: absolute;
+   
     left: 50%;
     width: 576px;
-    height: 481px;
     background-color: #ffffff;
 }
 
+.field {
+    float: left;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 .form-name {
-    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
     text-transform:uppercase;
+    margin-bottom: 55px;
+    padding: 35px 144px;
     color: white;
     background-color: #766357;
 }
 
 .main-footer {
-    margin: 0 auto;
+    text-align: center;
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 36px;
+    padding-bottom: 36px;
     width: 100%;
-    height: 120px;
-}
-
-.footer-social {
-    float: left;
-    width: 33.3%;
+    box-sizing: border-box;
 }
 
 .footer-contacts {
     float: left;
-    width: 33.3%;
+    width: 20%;
+}
+
+.footer-contacts a {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 50px;
+}
+
+.footer-social {
+    display: inline-block;
+    width: 60%;
+}
+
+.social-btn {
+    display: inline-block;
+    background-color: #81b3d2;
+}
+
+.footer-social a {
+    font-size: 19px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 37px;
+    padding: 15px 8px;
 }
 
 .footer-copyright {
     float: right;
-    width: 33.3%;
+    width: 20%;
+    margin-left: -1px;
+    margin-top: 40px;
 }
 
+.footer-copyright a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1px;
+}
+
+.footer-copyright span {
+    display: inline-block;
+}
 .search-filters {
-    position: relative;
+    width: 100%;
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 32px;
+    margin-bottom: 30px;
     min-height: 217px;
     background: #40759f url("../img/filter_background.jpg") no-repeat;
     color: #ffffff;
+    box-sizing: border-box;
+}
+
+.search-filters input[type=checkbox] {
+    display: none;
+}
+
+.form-title {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.search-filters label {
+    display: block;
 }
 
 .filter-infrastructure {
-    position: absolute;
-    width: 240px;
+    float: left;
+    margin-left: -800px;
+    padding-top: 30px;
 }
 
 .filter-type {
-    position: absolute;
-    left: 440px;
-    width: 240px;
+    float: left;
+    margin-left: -600px;
+    padding-top: 30px;
 }
 
 .filter-cost {
-    display: inline-block;
-    vertical-align: top;
+    float: right;
+    margin-right: -100px;
 }
 
 .hotels-found {
     display: inline-block;
     vertical-align: top;
-    width: 135px;
+    padding-bottom: 35px;
 }
 
 .sorting {
     display: inline-block;
     vertical-align: top;
-    width: 135px;
+    padding-top: 4px;
+    padding-right: 38px;
 }
 
-.sorting ul {
+.hotels-found {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform:uppercase;
+    margin-right: 50px;
+}
+
+.sort-panel ul {
     display: inline-block;
+    vertical-align: top;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.sorting li {
+.sort-panel li {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    width: 10%;
+    padding-top: 4px;
+    padding-right: 32px;
 }
 
 .sorting a {
     display: block;
     text-decoration: none;
+    color: #b1b1b1;
 }
 
 .sort {
-    display: inline-block;
+    float: right;
 }
 
-.results {
-    
+.icon-down-dir {
+    color: #81b3d2;
 }
+
+.icon-up-dir {
+    color: #d3d3d3;    
+}
+
 .sort-panel {
     padding-left: 6%;
     padding-right: 6%;
@@ -282,9 +373,9 @@ b {
 .house-picture {
     display: inline-block;
     vertical-align: top;
+    padding-left: 6%;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 6%;
     width: 135px;
 }
 
@@ -303,9 +394,20 @@ b {
 }
 
 .house-rating {
-    display: inline-block;
-    vertical-align: top;
-    width: 135px;
+    float: right;
+    margin-top: 30px;
+    padding-right: 6%
+}
+.icon-star {
+    color: #81b3d2;
+    padding-bottom: 47px;
+    font-size: 30px;
+}
+
+.house-rating p {
+    margin-top: 27px;
+    padding: 8px 15px;
+    background-color: #f2f2f2;
 }
 
 .more {
@@ -335,12 +437,6 @@ b {
     padding: 8px 17px;
     background-color: #766357;
     color: #ffffff;
-}
-.social-btn {
-    display: inline-block;
-    width: 46px;
-    height: 48px;
-    background-color: #81b3d2;
 }
 
 .house {
