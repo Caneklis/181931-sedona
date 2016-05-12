@@ -17,7 +17,7 @@
                         <li><a href="#">Фото и видео</a></li>
                         <li class="logo-nav"><a href="index.html"><img src="img/logo.png" alt="На главную"></a></li>
                         <li><a href="#">Карта штата</a></li>
-                        <li><a href="catalog.html">Гостины</a></li>
+                        <li><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,51 +25,55 @@
                 <div class="index-intro"></div>
                 <h1>Седона — небольшой городок в Аризоне,<br>
                 заслуживающий большего!</h1>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                 <section class="features clearfix">
                     <div class="feature-row">
                         <div class="features-description picture">
                             <b class="features-name">Настоящий<br>городок</b>
-                            <p>-№1-<br>Седона - не аттракцион для туристов,<br>
+                            <p>- №1 -<br>Седона - не аттракцион для туристов,<br>
                             там течет своя жизнь</p>
                         </div>
                         <div class="features-picture town"></div>
                     </div>
                     <div class="feature-row plus">
                         <div class="features-description">
+                            <span class="home"></span>
                             <b class="features-name">Жилье</b>
-                            <p>Рекомендуем пожить в настоящем мотеле,<br>
-                            все как в кино!</p>
+                            <p>Рекомендуем пожить в настоящем<br>
+                            мотеле, все как в кино!</p>
                         </div>
                         <div class="features-description">
+                            <span class="eat"></span>   
                             <b class="features-name">Еда</b>
                             <p>Всегда заказывайте фирменный бургер,<br>
                             вы не разочаруетесь!</p>
                         </div>
                         <div class="features-description">
+                           <span class="souvenir"></span>
                             <b class="features-name">Сувениры</b>
-                            <p>Не только китайского, но и местного производства</p>
+                            <p>Не только китайского, но и местного<br>
+                            производства</p>
                         </div>    
                     </div>
                     <div class="feature-row">
                         <div class="features-picture canyon"></div>
                         <div class="features-description picture">
-                            <b class="features-name">Там есть мост дьявола</b>
-                            <p>-№2-<br>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
+                            <b class="features-name">Там есть<br>мост дьявола</b>
+                            <p>- №2 -<br>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
                         </div>
                     </div>
                     <div class="feature-row">   
                         <div class="features-description">
-                            <b class="features-name">Небольшая площадь</b>
-                            <p>-№3-<br>Все достопримичательности находяться очень близко</p>
+                            <b class="features-name">Небольшая<br>площадь</b>
+                            <p>- №3 -<br>Все достопримичательности находяться очень близко</p>
                         </div>
                         <div class="features-description">
-                            <b class="features-name">Красивая дорога</b>
-                            <p>-№4-<br>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                            <b class="features-name">Красивая<br>дорога</b>
+                            <p>- №4 -<br>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                         </div>
                         <div class="features-description">
-                            <b class="features-name">Мало туристов</b>
-                            <p>-№5-<br>Большинство едет в Гранд Каньон и толпится там</p>
+                            <b class="features-name">Мало<br>туристов</b>
+                            <p>- №5 -<br>Большинство едет в Гранд Каньон и толпится там</p>
                         </div>
                     </div>
                 </section>
@@ -77,37 +81,21 @@
                     <h2>Заинтересовались?</h2>
                     <p>Укажите предпологаемые даты поездки,<br>
                     и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                    <form class="booking-form" action="#" method="post">
+                        <div class="form-name">Поиск гостиницы в Седоне</div>
+                            <label for="date_in">Дата заезда:</label>
+                            <input type="date" id="date_in" name="date_in" value="" placeholder="">
+                            <label for="date_out">Дата выезда:</label>
+                            <input type="date" id="date_out" name="date_out" value="" placeholder="Дата выезда">
+                            <label for="adults">Взрослые:</label>
+                            <input type="text" id="adults" name="adults" value="" placeholder="Взрослые">
+                            <label for="children">Дети:</label>
+                            <input type="text" id="children" name="children" value="" placeholder="Дети">
+                        <button type="submit" class="btn">Найти</button>
+                    </form>
                 </div>
-                <form class="booking-form" action="#" method="post">
-                    <div class="form-name">Поиск гостиницы в Седоне</div>
-                    <div class="field">
-                        <label for="date_in">Дата заезда</label>
-                    </div>
-                    <div class="field">
-                        <input type="date" id="date_in" name="date_in" value="" placeholder="">
-                    </div>
-                    <div class="field">
-                        <label for="date_out">Дата выезда</label>
-                    </div>
-                    <div class="field">
-                        <input type="date" id="date_out" name="date_out" value="" placeholder="Дата выезда">
-                    </div>
-                    <div class="field">
-                        <label for="adults">Взрослые</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" id="adults" name="adults" value="" placeholder="Взрослые">
-                    </div>
-                    <div class="field">
-                        <label for="children">Дети</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" id="children" name="children" value="" placeholder="Дети">
-                    </div>
-                    <button type="submit" class="btn">Найти</button>
-                </form>
                 <div class="map">
-                    <img src="img/map.jpg" alt="Карта">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608777.5125344915!2d-112.0902682840164!3d35.02390257664038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1463054759337" width="100%" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </main>
             <footer class="main-footer">

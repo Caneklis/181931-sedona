@@ -96,30 +96,84 @@ b {
     color: #000000;
 }
 
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
 .logo-nav {
+    position: relative;
+    z-index: 20;
     text-align: center;
 }
 
 .logo-nav a {
     padding: 0;
+    
 }
 
 .index-intro {
+    position: relative;
+    z-index: 10;
     width: 100%;
     height: 508px;
-    background: #ffffff url("../img/background photo.jpg") no-repeat 50% 21%;
-    padding-bottom: 48px;
+    margin-bottom: 60px;
+    background: #ffffff url("../img/background photo.jpg") no-repeat 50% 20%;
 }
 
-.feature-row {
+.index-intro::before {
+    position: absolute;
+    content: "";
+    top: 451px;
+    left: 0;
     width: 100%;
-    float: left;
-    background-color: #eeeeee;
+    height: 57px;
+    background: url("../img/sprite.png") no-repeat -10px -10px;
+}
 
+.reasons {
+    margin-top: 29px;
+    margin-bottom: 54px;
+}
+.feature-row {
+    float: left;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+
+.home {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    display: block;
+    width: 75px;
+    height: 72px;
+    background: url("../img/sprite.png") no-repeat -10px -177px;
+}
+
+.eat {
+    position: absolute;
+    top: 60px;
+    left: 162px;
+    display: block;
+    width: 74px;
+    height: 70px;
+    background: url("../img/sprite.png") no-repeat -10px -87px;
+}
+
+.souvenir {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    display: block;
+    width: 64px;
+    height: 76px;
+    background: url("../img/sprite.png") no-repeat -10px -269px;
 }
 
 .picture {
-    background-color: #81b3d2;    
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .plus {
@@ -127,9 +181,10 @@ b {
 }
 
 .plus b {
-    padding-top: 184px;
+    padding-top: 162px;
 }
 .plus p {
+    padding-top: 10px;
     padding-bottom: 85px;    
 }
 
@@ -140,7 +195,7 @@ b {
 }
 .town {
     height: 256px;
-    background: url("../img/bridge-of-devil.jpg") no-repeat;
+    background: url("../img/true-city.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -152,10 +207,12 @@ b {
 }
 
 .features-description {
+    position: relative;
     float: left;
     width: 33.3%;
     min-height: 256px;
 }
+
 
 .features-description b {
     text-align: center;
@@ -163,7 +220,7 @@ b {
 
 .features-description p {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .features-name {
@@ -174,29 +231,65 @@ b {
 
 .booking {
     width: 100%;
+    position: relative;
 }
 
 .booking h2{
     text-align: center;
+    padding-top: 37px;
+    padding-bottom: 6px;
 }
 
 .booking p {
-    position: relative;
-    display: block;
     text-align: center;
+    padding-bottom: 138px;
 }
 
 .booking-form {
-   
-    left: 50%;
-    width: 576px;
+    position: absolute;
+    top: 180px;
+    left: 25%;
+    width: 570px;
     background-color: #ffffff;
 }
 
-.field {
-    float: left;
-    padding-left: 60px;
-    padding-right: 60px;
+.booking-form input {
+    display: inline-block;
+    width: 345px;
+    margin-bottom: 29px;
+    background-color: #f2f2f2;
+}
+
+.booking-form input[id="adults"] {
+    width: 114px;
+    margin-left: 25px;
+}
+
+.booking-form input[id="children"] {
+    width: 114px;
+}
+
+.booking-form label {
+    display: inline-block;
+    padding-left: 56px;
+    padding-right: 20px;
+    
+
+}
+.field-input {
+    display: inline-block;
+}
+
+.booking-form label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.booking-form button{
+    padding: 18px 196px;
+    background-color: #81b3d2;
+    margin: 55px 55px;
 }
 
 .form-name {
@@ -205,24 +298,27 @@ b {
     line-height: 26px;
     font-weight: 700;
     text-transform:uppercase;
-    margin-bottom: 55px;
-    padding: 35px 144px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 35px 0;
     color: white;
     background-color: #766357;
 }
 
+.map {
+    width: 100%;
+}
+
 .main-footer {
     text-align: center;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-bottom: 36px;
     width: 100%;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 
 .footer-contacts {
     float: left;
-    width: 20%;
+    width: 33%;
 }
 
 .footer-contacts a {
@@ -232,32 +328,33 @@ b {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
-    padding-top: 50px;
 }
 
 .footer-social {
-    display: inline-block;
-    width: 60%;
+    float: left;
+    width: 33%;
 }
 
 .social-btn {
     display: inline-block;
+    vertical-align: top;
     background-color: #81b3d2;
+    margin-left: 4px;
 }
 
 .footer-social a {
     font-size: 19px;
     line-height: 20px;
     color: #ffffff;
-    margin-top: 37px;
-    padding: 15px 8px;
+    padding: 14px 9px;
+    margin-left: 3px;
+    margin-bottom: 30px;
 }
 
 .footer-copyright {
     float: right;
-    width: 20%;
+    width: 33%;
     margin-left: -1px;
-    margin-top: 40px;
 }
 
 .footer-copyright a {
@@ -295,7 +392,7 @@ b {
 
 .filter-infrastructure {
     float: left;
-    margin-left: -1000px;
+    margin-left: -1050px;
     padding-top: 30px;
 }
 
@@ -358,11 +455,21 @@ b {
 }
 
 .icon-down-dir {
+    font-size: 23px;
     color: #81b3d2;
 }
 
+.icon-down-dir:hover {
+    color: #000000;
+}
+
 .icon-up-dir {
+    font-size: 23px;
     color: #d3d3d3;    
+}
+
+.icon-up-dir:hover {
+    color: #000000;    
 }
 
 .sort-panel {
@@ -374,39 +481,57 @@ b {
     display: inline-block;
     vertical-align: top;
     padding-left: 6%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 26px;
+    padding-bottom: 28px;
     width: 135px;
 }
 
 .house-description {
     display: inline-block;
     vertical-align: top;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-left: 28px;
+    padding-top: 20px;
     padding-bottom: 30px;
-    width: 700px;
+    width: 563px;
 }
 
-.house-name {
+.house-description h2 {
+    font-size: 21px;
+    line-height: 26px;
     margin: 0;
-    padding-bottom: 18px;
+    padding-bottom: 7px;
+}
+
+.house-name a:hover {
+    color: #81b3d2;
+}
+
+.more p {
+    text-align: left;
+}
+
+.book p {
+    text-align: left;
 }
 
 .house-rating {
     float: right;
-    margin-top: 30px;
+    width: 130px;
+    margin-top: 20px;
     padding-right: 6%
 }
 .icon-star {
+    text-align: right;
     color: #81b3d2;
     padding-bottom: 47px;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: 2px;
 }
 
 .house-rating p {
-    margin-top: 27px;
-    padding: 8px 15px;
+    margin-top: 45px;
+    padding: 3px 10px;
     background-color: #f2f2f2;
 }
 
@@ -424,17 +549,17 @@ b {
 }
 
 .more a {
-    display: block;
-    margin-top: 18px;
-    padding: 8px 17px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 3px 16px;
     background-color: #81b3d2;
     color: #ffffff;
 }
 
 .book a {
     display: block;
-    margin-top: 18px;
-    padding: 8px 17px;
+    margin-top: 15px;
+    padding: 3px 16px;
     background-color: #766357;
     color: #ffffff;
 }
