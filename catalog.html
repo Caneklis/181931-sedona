@@ -17,7 +17,7 @@
                         <li><a href="#">Фото и видео</a></li>
                         <li class="logo-nav"><a href="index.html"><img src="img/logo.png" alt="На главную"></a></li>
                         <li><a href="#">Карта штата</a></li>
-                        <li><a href="#">Гостиницы</a></li>
+                        <li><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,27 +25,47 @@
                 <form class="search-filters clearfix" action="#" method="get">
                     <div class="filter-infrastructure">   
                         <div class="form-title">Инфраструктура</div>
-                        <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
-                        <label for="infrastructure-field">Бассейн</label>
-                        <input type="checkbox" name="infrastructure" id="infrastructure-field">
-                        <label for="infrastructure-field">Парковка</label>
-                        <input type="checkbox" name="infrastructure" id="infrastructure-field">
-                        <label for="infrastructure-field">Wi-Fi</label>
+                        <div class="form-items-wrap">
+                            <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
+                            <span class="icon-check-on"></span>
+                            <label for="infrastructure-field">Бассейн</label>
+                            <input type="checkbox" name="infrastructure" id="infrastructure-field">
+                            <span class="icon-check-off"></span>
+                            <label for="infrastructure-field">Парковка</label>
+                            <input type="checkbox" name="infrastructure" id="infrastructure-field">
+                            <span class="icon-check-off"></span>
+                            <label for="infrastructure-field">Wi-Fi</label>
+                        </div>
                     </div>
                     <div class="filter-type">
                         <div class="form-title">Тип жилья</div>
-                        <input type="checkbox" name="house-type" id="house-type" checked>
-                        <label for="house-type-field">Гостиница</label>
-                        <input type="checkbox" name="producers" id="house-type-field" checked>
-                        <label for="house-type-field">Мотель</label>
-                        <input type="checkbox" name="producers" id="house-type-field" checked>
-                        <label for="house-type-field">Апартаменты</label>
-                    </div>
-                    <div class="filter-cost">    
-                        <div class="form-title">Стоимость в сутки (р)</div>
-                        <input type="range" min="0" max="3000" step="1" value="50">
-                        <button type="submit" class="btn">Показать</button>
-                    </div>
+                        <div class="form-items-wrap">
+                            <input type="checkbox" name="house-type" id="house-type" checked>
+                            <span class="icon-check-on"></span>
+                            <label for="house-type-field">Гостиница</label>
+                            <input type="checkbox" name="producers" id="house-type-field" checked>
+                            <span class="icon-check-on"></span>
+                            <label for="house-type-field">Мотель</label>
+                            <input type="checkbox" name="producers" id="house-type-field" checked>
+                            <span class="icon-check-on"></span>
+                            <label for="house-type-field">Апартаменты</label>
+                        </div>
+                    </div>    
+                        <div class="filter-range">
+                          <div class="filter-range-title">Стоимость в сутки (р):</div>
+                          <div class="price-controls">
+                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                          </div>
+                          <div class="range-controls">
+                            <div class="scale">
+                              <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                          </div>
+                          <button class="btn-transparent" type="submit">Показать</button>
+                        </div>
                 </form>
                 <div class="sort-panel">
                     <div class="hotels-found">Найдено: <span>3</span></div>
@@ -61,7 +81,7 @@
                     </div>    
                 </div>
                 <div class="results">       
-                    <article class="house">
+                    <article class="house clearfix">
                         <div class="house-picture">
                             <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото жилья">
                         </div>
@@ -84,7 +104,7 @@
                             <p>Рейтинг: 8,5</p>
                         </div>
                     </article>
-                    <article class="house">
+                    <article class="house clearfix">
                         <div class="house-picture">
                             <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото жилья">
                         </div>
@@ -105,7 +125,7 @@
                             <p>Рейтинг: 8,9</p>
                         </div>
                     </article>
-                    <article class="house">
+                    <article class="house clearfix">
                         <div class="house-picture">
                             <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото жилья">
                         </div>
