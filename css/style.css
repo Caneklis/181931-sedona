@@ -1,3 +1,39 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "symbols-sedona";
+    src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+    display: inline-block;
+    width: 1em;
+    margin-left: .1em;
+    font-weight: normal;
+    line-height: 1em;
+    font-family: "symbols-sedona";
+    text-align: center;
+    text-transform: none;
+    text-decoration: inherit;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
@@ -117,7 +153,7 @@ ul {
 }
 
 .main-navigation a:active {
-    color: #766357;
+    color: #b2b2b2;
 }
 
 .logo-nav {
@@ -303,22 +339,26 @@ ul {
     position: relative;
     border: none;
     padding: 0;
-    margin-bottom: 11px;
+    padding-left: 55px;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
-.form-row:nth-child(2n) {
+.counter:nth-child(2n) {
     margin-bottom: 10px;
+    margin-left: 5px;
+    padding-left: 0px;
 }
 
 .booking-form input {
     display: inline-block;
     vertical-align: top;
-    width: 350px;
+    width: 345px;
     margin-bottom: 20px;
-    margin-left: 15px;
-    padding-top: 4px;
+    margin-left: 20px;
+    padding-top: 7px;
     padding-bottom: 6px;
-    padding-left: 15px;
+    padding-left: 10px;
     border: none;
     background-color: #f2f2f2;
     box-sizing: border-box;
@@ -326,12 +366,31 @@ ul {
     line-height: 26px;
     text-transform: uppercase;
 }
+
+.booking-form input:hover {
+    background-color: #ebebeb;
+}
+
+.booking-form input:active {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding-top: 6px;
+    padding-bottom: 2px;;
+    padding-left: 9px;
+}
+
+.booking-form input[id="date_out"] {
+    margin-left: 15px;
+}
+
 .icon-calendar {
     position: absolute;
-    right: 60px;
-    top: 5px;
+    right: 55px;
+    top: 0;
     color: #a9a9a9;
+    cursor: pointer;
 }
+
 .icon-calendar::before {
     width: 38px;
     margin: 0;
@@ -340,18 +399,30 @@ ul {
     text-align: center;
 }
 
+.icon-calendar:hover {
+    color: #000000;
+}
+
+.icon-calendar:active {
+    color: #81b3d2;
+}
+
 .booking-form input[id="adults"] {
-    width: 70px;
+    width: 75px;
     margin-left: -6px;
     margin-right: -6px;
+    padding-top: 8px;
+    padding-bottom: 4px;
     padding-left: 0;
     text-align: center;
 }
 
 .booking-form input[id="children"] {
-    width: 70px;
+    width: 75px;
     margin-left: -6px;
     margin-right: -6px;
+    padding-top: 8px;
+    padding-bottom: 4px;
     padding-left: 0;
     text-align: center;
 }
@@ -360,8 +431,7 @@ ul {
     width: 459px;
     margin-top: 25px;
     margin-bottom: 55px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 55px;
     padding: 16px;
     font-size: 21px;
     line-height: 26px;
@@ -376,10 +446,8 @@ ul {
 .booking-form label {
     display: inline-block;
     vertical-align: top;
-}
-
-.booking-form label {
-    padding-top: 5px;
+    padding-top: 7px;
+    padding-left: 4px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -390,10 +458,32 @@ ul {
     padding-top: 7px;
 }
 
+.counter label {
+    padding: 0;
+}
+
 .booking-form label[for="children"] {
     margin-right: 25px;
     margin-left: 50px;
     padding-top: 7px;
+}
+
+.icon-minus, .icon-plus {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 38px;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+
+.icon-minus:hover, .icon-plus:hover {
+    color: #000000;
+}
+
+.icon-minus:active, .icon-plus:active {
+    color: #81b3d2;
 }
 
 .booking-form button {
@@ -405,6 +495,7 @@ ul {
     font-size: 14px;
     line-height: 38px;
     text-align: center;
+    
 }
 .counter {
     display: inline-block;
@@ -421,6 +512,7 @@ ul {
     border: none;
     color: #ffffff;
     background-color: #81b3d2;
+    cursor: pointer;
 }
 
 .booking-form btn:hover {
@@ -441,7 +533,6 @@ ul {
     line-height: 26px;
     font-weight: 700;
     text-transform:uppercase;
-    text-align: center;
     color: white;
     background-color: #766357;
 }
@@ -496,13 +587,25 @@ ul {
     margin-left: 4px;
 }
 
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
 .footer-social a {
     font-size: 19px;
     line-height: 20px;
     color: #ffffff;
-    padding: 14px 9px;
-    margin-left: 3px;
+    padding: 14px 11px;
+    margin-right: 3px;
     margin-bottom: 30px;
+}
+
+.footer-social a {
+    color: #ffffff;
+}
+
+.footer-social a:active {
+    color: #88b6d1;
 }
 
 .footer-copyright {
@@ -551,7 +654,7 @@ ul {
     font-weight: 700;
 }
 
-.form-items-wrap li {
+.form-items li {
     margin-bottom: 25px;
 }
 
@@ -574,15 +677,15 @@ ul {
 .filter-infrastructure {
     float: left;
     width: 20%;
-    min-width: 241px;
-    margin-right: 15px;
+    min-width: 200px;
+    margin-right: 45px;
     padding-top: 6px;
 }
 
 .filter-type {
     float: left;
     width: 20%;
-    min-width: 235px;
+    min-width: 150px;
     padding-top: 5px;
 }
 
@@ -606,7 +709,7 @@ input[type="checkbox"] {
     top: 0;
     font-size: 26px;
     font-family: 'symbols-sedona';
-    color: #b5b5b5;
+    color: #ffffff;
 }
 
 .form-checkbox:checked + .form-label::before {
@@ -614,7 +717,7 @@ input[type="checkbox"] {
 }
 
 .form-checkbox + .form-label:hover::before {
-    color: #fff;
+    color: #ffffff;
 }
 
 .form-checkbox:disabled + .form-label,
@@ -784,22 +887,26 @@ input[type="checkbox"] {
 .sort-panel li {
     display: inline-block;
     vertical-align: top;
+    
     font-size: 12px;
+    margin-right: 30px;
     line-height: 18px;
-    padding-right: 30px;
 }
 
 .sort-panel a {
-    display: block;
     text-decoration: none;
-    color: #b1b1b1;
+    border-bottom: 1px dashed #81b3d2;
+    color: #c7c7c7;
 }
-.sort-panel a:active {
-    color: #b3d1e4;
-}
+
 .sort-panel a:hover {
     border-bottom: 1px dashed #81b3d2;
     color: #81b3d2;
+}
+
+.sort-panel a:active {
+    color: #000000;
+    border-bottom: none;
 }
 
 .sort {
@@ -807,22 +914,38 @@ input[type="checkbox"] {
     margin-right: -10px;
 }
 
+.sort span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+}
+
 .icon-down-dir {
     font-size: 23px;
     color: #81b3d2;
+    cursor: pointer;
 }
 
 .icon-down-dir:hover {
     color: #000000;
 }
 
+.icon-down-dir:active {
+    color: #81b3d2;    
+}
+
 .icon-up-dir {
     font-size: 23px;
-    color: #d3d3d3;    
+    color: #d3d3d3; 
+    cursor: pointer;
 }
 
 .icon-up-dir:hover {
     color: #000000;    
+}
+
+.icon-up-dir:active {
+    color: #81b3d2;    
 }
 
 .sort-panel {
@@ -853,10 +976,14 @@ input[type="checkbox"] {
     line-height: 26px;
     margin: 0;
     padding-bottom: 7px;
+    cursor: pointer;
 }
 
-.house-name a:hover {
+.house-name:hover {
     color: #81b3d2;
+}
+.house-name:active {
+    color: #cacaca;    
 }
 
 .more p {
@@ -870,14 +997,13 @@ input[type="checkbox"] {
 .house-rating {
     float: right;
     width: 150px;
-    margin-top: 20px;
+    margin-top: 23px;
     padding-right: 6%
 }
 .icon-star {
     float: right;
     color: #81b3d2;
     font-size: 20px;
-    letter-spacing: 0;
 }
 
 .house-rating p {
@@ -932,3 +1058,25 @@ input[type="checkbox"] {
 .booking-form-show {
     display: block;
 }
+
+.icon-up-dir {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.booking-form {
+    animation-name: lift-down;
+    animation-duration: 15s;
+}
+
+@keyframes list-down {
+    o% {
+        transform: translateY(-30px);
+    50% {
+        transform: translateY(-160px);
+    }
+    100% {
+        transform: translateY(-300px);    
+    }
+}
+    

@@ -6,7 +6,6 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/symbols-sedona.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
@@ -88,25 +87,25 @@
                         <form class="booking-form" action="#" method="post">
                             <fieldset class="form-row">  
                                 <label for="date_in">Дата заезда:</label>
-                                <input type="date" id="date_in" name="date_in" value="">
+                                <input type="text" id="date_in" name="date_in" value="">
                                 <span class="icon-calendar"></span>
                             </fieldset>
                             <fieldset class="form-row">
                                 <label for="date_out">Дата выезда:</label>
-                                <input type="date" id="date_out" name="date_out" value="">
+                                <input type="text" id="date_out" name="date_out" value="">
                                 <span class="icon-calendar"></span>
                             </fieldset>
                             <fieldset class="form-row counter">
                                 <label for="adults">Взрослые:</label>
-                                <button class="icon-minus" type="button" tabindex="-1"></button>
+                                <span class="icon-minus"></span>
                                 <input type="text" id="adults" name="adults" value="">
-                                <button class="icon-plus" type="button" tabindex="-1"></button>
+                                <span class="icon-plus"></span>
                             </fieldset>
                             <fieldset class="form-row counter">
                                 <label for="children">Дети:</label>
-                                <button class="icon-minus" type="button" tabindex="-1"></button>
+                                <span class="icon-minus"></span>
                                 <input type="text" id="children" name="children" value="">
-                                <button class="icon-plus" type="button" tabindex="-1"></button>
+                                <span class="icon-plus"></span>
                             </fieldset>    
                             <input class="btn" type="submit" value="Найти">
                         </form>
@@ -131,13 +130,6 @@
                 </article>
             </footer>
         </div>
-        <script>
-            var link = document.querySelector(".booking-button");
-            var popup = document.querySelector(".booking-form");
-            link.addEventListener("click", function(event) {
-            event.preventDefault();
-            popup.classList.add("booking-form-show");
-            });
-        </script>    
+        <script src="js/main.js"></script>    
     </body>
 </html>
