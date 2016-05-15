@@ -1049,14 +1049,14 @@ input[type="checkbox"] {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
 }
-
-
+    
 .booking-form {
     display: none;
 }
 
 .booking-form-show {
-    display: block;
+    display: block;    
+    animation: bounce 0.7s;
 }
 
 .icon-up-dir {
@@ -1064,19 +1064,18 @@ input[type="checkbox"] {
     margin-left: 0;
 }
 
-.booking-form {
-    animation-name: lift-down;
-    animation-duration: 15s;
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes list-down {
-    o% {
-        transform: translateY(-30px);
-    50% {
-        transform: translateY(-160px);
-    }
-    100% {
-        transform: translateY(-300px);    
-    }
-}
-    
