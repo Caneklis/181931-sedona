@@ -24,34 +24,54 @@
             <main clearfix>
                 <form class="search-filters clearfix" action="#" method="get">
                     <div class="filter-infrastructure">   
-                        <div class="form-title">Инфраструктура</div>
                         <div class="form-items-wrap">
-                            <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
-                            <span class="icon-check-on"></span>
-                            <label for="infrastructure-field">Бассейн</label>
-                            <input type="checkbox" name="infrastructure" id="infrastructure-field">
-                            <span class="icon-check-off"></span>
-                            <label for="infrastructure-field">Парковка</label>
-                            <input type="checkbox" name="infrastructure" id="infrastructure-field">
-                            <span class="icon-check-off"></span>
-                            <label for="infrastructure-field">Wi-Fi</label>
+                        <div class="form-title">Инфраструктура</div>
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-field" checked>
+                                    <label class="form-label" for="infrastructure-field">Бассейн</label>
+                                </li>
+                            </ul>
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-field">
+                                    <label class="form-label" for="infrastructure-field">Парковка</label>
+                                </li>
+                            </ul>
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-field">
+                                    <label class="form-label" for="infrastructure-field">Wi-Fi</label>
+                                </li>
+                            </ul>    
                         </div>
                     </div>
                     <div class="filter-type">
-                        <div class="form-title">Тип жилья</div>
                         <div class="form-items-wrap">
-                            <input type="checkbox" name="house-type" id="house-type" checked>
-                            <span class="icon-check-on"></span>
-                            <label for="house-type-field">Гостиница</label>
-                            <input type="checkbox" name="producers" id="house-type-field" checked>
-                            <span class="icon-check-on"></span>
-                            <label for="house-type-field">Мотель</label>
-                            <input type="checkbox" name="producers" id="house-type-field" checked>
-                            <span class="icon-check-on"></span>
-                            <label for="house-type-field">Апартаменты</label>
+                        <div class="form-title">Тип жилья</div>
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="house-type" id="house-type" checked>
+                                    <label class="form-label" for="house-type-field">Гостиница</label>
+                                </li>
+                            </ul>    
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="producers" id="house-type-field" checked>
+                                    <label class="form-label" for="house-type-field">Мотель</label>
+                                </li>
+                            </ul>
+                            <ul>   
+                                <li>
+                                    <input class="form-checkbox" type="checkbox" name="producers" id="house-type-field" checked>
+                                    <label class="form-label" for="house-type-field">Апартаменты</label>
+                                </li>
+                            </ul>
                         </div>
-                    </div>    
+                    </div>
+                           
                         <div class="filter-range">
+                         <div class="form-items-wrap">
                           <div class="filter-range-title">Стоимость в сутки (р):</div>
                           <div class="price-controls">
                             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -66,6 +86,7 @@
                           </div>
                           <button class="btn-transparent" type="submit">Показать</button>
                         </div>
+                    </div>
                 </form>
                 <div class="sort-panel">
                     <div class="hotels-found">Найдено: <span>3</span></div>

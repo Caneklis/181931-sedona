@@ -30,7 +30,7 @@
                     <div class="feature-row">
                         <div class="features-description picture">
                             <b class="features-name">Настоящий<br>городок</b>
-                            <span>- №1 -</span>
+                            <span class="feature-number">- №1 -</span>
                             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
                         <div class="features-picture town"></div>
@@ -57,24 +57,24 @@
                         <div class="features-picture canyon"></div>
                         <div class="features-description picture">
                             <b class="features-name">Там есть<br>мост дьявола</b>
-                            <span>- №2 -</span>
+                            <span class="feature-number">- №2 -</span>
                             <p>Да, по нему можно пройти! Если конечно вы осмелетесь</p>
                         </div>
                     </div>
                     <div class="feature-row last-reasons">   
                         <div class="features-description">
                             <b class="features-name">Небольшая<br>площадь</b>
-                            <span>- №3 -</span>
+                            <span class="feature-number">- №3 -</span>
                             <p>Все достопримичательности находяться очень близко</p>
                         </div>
                         <div class="features-description">
                             <b class="features-name">Красивая<br>дорога</b>
-                            <span>- №4 -</span>
+                            <span class="feature-number">- №4 -</span>
                             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
                         </div>
                         <div class="features-description">
                             <b class="features-name">Мало<br>туристов</b>
-                            <span>- №5 -</span>
+                            <span class="feature-number">- №5 -</span>
                             <p>Большинство едет в Гранд Каньон и толпится там</p>
                         </div>
                     </div>
@@ -86,17 +86,29 @@
                     <div class="booking-button">
                         <a href="#">Поиск гостиницы в Седоне</a>
                         <form class="booking-form" action="#" method="post">
-                            <div class="booking-wrap">   
+                            <fieldset class="form-row">  
                                 <label for="date_in">Дата заезда:</label>
-                                <input type="date" id="date_in" name="date_in" value="" placeholder="">
+                                <input type="date" id="date_in" name="date_in" value="">
+                                <span class="icon-calendar"></span>
+                            </fieldset>
+                            <fieldset class="form-row">
                                 <label for="date_out">Дата выезда:</label>
-                                <input type="date" id="date_out" name="date_out" value="" placeholder="">
+                                <input type="date" id="date_out" name="date_out" value="">
+                                <span class="icon-calendar"></span>
+                            </fieldset>
+                            <fieldset class="form-row counter">
                                 <label for="adults">Взрослые:</label>
-                                <input type="text" id="adults" name="adults" value="" placeholder="">
+                                <button class="icon-minus" type="button" tabindex="-1"></button>
+                                <input type="text" id="adults" name="adults" value="">
+                                <button class="icon-plus" type="button" tabindex="-1"></button>
+                            </fieldset>
+                            <fieldset class="form-row counter">
                                 <label for="children">Дети:</label>
-                                <input type="text" id="children" name="children" value="" placeholder="">
-                                <button type="submit" class="btn">Найти</button>
-                            </div>
+                                <button class="icon-minus" type="button" tabindex="-1"></button>
+                                <input type="text" id="children" name="children" value="">
+                                <button class="icon-plus" type="button" tabindex="-1"></button>
+                            </fieldset>    
+                            <input class="btn" type="submit" value="Найти">
                         </form>
                     </div>
                 </div>
@@ -118,6 +130,14 @@
                     <a href="https://htmlacademy.ru"><img src="img/html-academy-logo.png" width="113" height="39" alt="HTML Academy"></a>
                 </article>
             </footer>
-        </div>    
+        </div>
+        <script>
+            var link = document.querySelector(".booking-button");
+            var popup = document.querySelector(".booking-form");
+            link.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.add("booking-form-show");
+            });
+        </script>    
     </body>
 </html>
