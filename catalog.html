@@ -5,7 +5,7 @@
         <title>Каталог</title>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
@@ -20,7 +20,7 @@
                     </ul>
                 </nav>
             </header>
-            <main clearfix>
+            <main class="clearfix">
                 <form class="search-filters clearfix" action="#" method="get">
                     <div class="filter-infrastructure">
                         <div class="form-title">Инфраструктура</div>
@@ -63,23 +63,21 @@
                                     <label class="form-label" for="house-type-apartments">Апартаменты</label>
                                 </li>
                             </ul>
-                    </div>                           
-                        <div class="filter-range">
-                         <div class="form-items-wrap">
-                          <div class="filter-range-title">Стоимость в сутки (р):</div>
-                          <div class="price-controls">
+                    </div>                 
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
                             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                             <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                          </div>
-                          <div class="range-controls">
+                        </div>
+                        <div class="range-controls">
                             <div class="scale">
-                              <div class="bar"></div>
+                                <div class="bar"></div>
                             </div>
                             <div class="range-toggle range-toggle-min"></div>
                             <div class="range-toggle range-toggle-max"></div>
-                          </div>
-                          <button class="btn-transparent" type="submit">Показать</button>
                         </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
                     </div>
                 </form>
                 <div class="sort-panel">
@@ -175,7 +173,7 @@
                 </article>
                 <article class="footer-copyright">
                     <span>WEB SITE BY</span>
-                    <a href="https://htmlacademy.ru"><img src="img/html-academy-logo.png" width="113" height="39" alt="HTML Academy"></a>
+                    <a class="logo-htmlacademy" href="https://htmlacademy.ru">HTML Academy</a>
                 </article>
             </footer>
         </div>

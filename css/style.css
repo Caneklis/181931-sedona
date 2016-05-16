@@ -550,7 +550,13 @@ ul {
 
 .map {
     width: 100%;
+    height: 475px;
     background: url("../img/map.jpg") no-repeat;
+}
+
+.map iframe {
+    width:100%;
+    height: 475px; 
 }
 
 .main-footer {
@@ -614,11 +620,23 @@ ul {
     margin-left: -1px;
 }
 
-.footer-copyright a {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: -1px;
-    margin-top: 7px;
+.logo-htmlacademy {
+    display: inline-block;  
+    width: 113px;
+    height: 39px;
+    margin-top: 5px;
+    margin-left: 3px;
+    text-decoration: none;
+    font-size: 0;
+    background: transparent url('../img/logo-htmlacademy-sprites.png') no-repeat -5px -5px;
+}
+
+.logo-htmlacademy:hover {
+    background-position: -5px -54px;;
+}
+
+.logo-htmlacademy:active {
+    background-position: -5px -103px;;
 }
 
 .footer-copyright span {
@@ -679,6 +697,7 @@ ul {
     width: 20%;
     min-width: 200px;
     margin-right: 45px;
+    margin-left: -1px;
     padding-top: 6px;
 }
 
@@ -729,8 +748,9 @@ input[type="checkbox"] {
 
 .filter-range {
     float: right;
-    width: 20%;
-    min-width: 330px;
+    min-width: 20%;
+    max-width: 30%;
+    margin-right: 14px;
     padding-top: 6px;
     color: #ffffff;
     text-transform: uppercase;
@@ -746,7 +766,8 @@ input[type="checkbox"] {
 
 .price-controls {
     position: relative;
-    height: 36px;
+    width: 100%;
+    height: 34px;
     margin-bottom: 20px;
     margin-left: 12px;
     font-size: 0;
@@ -762,7 +783,8 @@ input[type="checkbox"] {
     width: 2px;
     height: 22px;
     background: #ffffff;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -775,12 +797,15 @@ input[type="checkbox"] {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
+    width: 30%;
+    padding-left: 21%;
+}
+.price-controls .max-price {
+    padding-left: 16%;
 }
 
 .price-controls input {
-    width: 50px;
+    max-width: 50%;
     margin: 0;
     color: inherit;
     font: inherit;
@@ -949,6 +974,7 @@ input[type="checkbox"] {
 }
 
 .sort-panel {
+    margin-bottom: -4px;
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -957,8 +983,8 @@ input[type="checkbox"] {
     display: inline-block;
     vertical-align: top;
     padding-left: 6%;
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding-top: 30px;
+    padding-bottom: 25px;
     width: 135px;
 }
 
@@ -966,7 +992,7 @@ input[type="checkbox"] {
     display: inline-block;
     vertical-align: top;
     padding-left: 28px;
-    padding-top: 20px;
+    padding-top: 23px;
     padding-bottom: 30px;
     width: 300px;
 }
@@ -997,7 +1023,7 @@ input[type="checkbox"] {
 .house-rating {
     float: right;
     width: 150px;
-    margin-top: 23px;
+    margin-top: 26px;
     padding-right: 6%
 }
 .icon-star {
@@ -1036,6 +1062,15 @@ input[type="checkbox"] {
     color: #ffffff;
 }
 
+.more a:hover {
+    background-color: #669ec0;    
+}
+
+.mare a:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
 .book a {
     display: block;
     margin-top: 15px;
@@ -1045,6 +1080,14 @@ input[type="checkbox"] {
     color: #ffffff;
 }
 
+.book a:hover {
+    background-color: #604e43;    
+}
+
+.book a:active {
+    color: #857871;
+    background-color: #503e33;
+}
 .house {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
@@ -1056,7 +1099,8 @@ input[type="checkbox"] {
 
 .booking-form-show {
     display: block;    
-    animation: bounce 0.7s;
+    -webkit-animation: bounce 0.7s;    
+            animation: bounce 0.7s;
 }
 
 .icon-up-dir {
@@ -1064,18 +1108,41 @@ input[type="checkbox"] {
     margin-left: 0;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
