@@ -515,15 +515,6 @@ ul {
     cursor: pointer;
 }
 
-.booking-form btn:hover {
-    background-color: #669ec0;
-}
-
-.booking-form btn:active {
-    background-color: #5496bd;
-    color: #88b6d1;
-}
-
 .booking-button {
     position: relative;
     width: 570px;
@@ -1102,6 +1093,14 @@ input[type="checkbox"] {
     display: block;    
     -webkit-animation: bounce 0.7s;    
             animation: bounce 0.7s;
+}
+.booking-form-show .btn:hover {
+    background-color: #669ec0;;
+}
+
+.booking-form-show .btn:active {
+    background-color: #5496bd;
+    color: #88b6d1;
 }
 
 .icon-up-dir {
