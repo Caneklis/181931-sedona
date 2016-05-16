@@ -42,6 +42,7 @@ body {
     text-transform:uppercase;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
 h1 {
@@ -371,12 +372,12 @@ ul {
     background-color: #ebebeb;
 }
 
-.booking-form input:active {
+.booking-form input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding-top: 6px;
-    padding-bottom: 2px;;
-    padding-left: 9px;
+    padding: 5px 9px;
+    box-sizing: border-box;
+    outline: none;
 }
 
 .booking-form input[id="date_out"] {
@@ -438,6 +439,7 @@ ul {
     text-transform: uppercase;
     text-align: center;
     border: none;
+    outline: none;
     color: #ffffff;
     background-color: #81b3d2;
 
