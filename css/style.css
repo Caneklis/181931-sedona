@@ -311,6 +311,7 @@ ul {
 }
 
 .booking {
+    position: relative;
     width: 100%;
 }
 
@@ -328,8 +329,9 @@ ul {
 
 .booking-form {
     position: absolute;
-    top: 100%;
-    left: 0;
+    z-index: 40;
+    left: 50%;
+    margin-left: -285px;
     width: 570px;
     padding-top: 55px;
     background-color: #ffffff;
