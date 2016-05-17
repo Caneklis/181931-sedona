@@ -5,7 +5,7 @@
         <title>Каталог</title>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
@@ -14,55 +14,40 @@
                     <ul class="clearfix">
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
-                        <li class="logo-nav"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
+                        <li></li>
                         <li><a href="#">Карта штата</a></li>
                         <li><a href="catalog.html">Гостиницы</a></li>
                     </ul>
+                    <div class="logo-nav"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></div>
                 </nav>
             </header>
             <main class="clearfix">
                 <form class="search-filters clearfix" action="#" method="get">
                     <div class="filter-infrastructure">
                         <div class="form-title">Инфраструктура</div>
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-pool" checked>
-                                    <label class="form-label" for="infrastructure-pool">Бассейн</label>
-                                </li>
-                            </ul>
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-parking">
-                                    <label class="form-label" for="infrastructure-parking">Парковка</label>
-                                </li>
-                            </ul>
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-wifi">
-                                    <label class="form-label" for="infrastructure-wifi">Wi-Fi</label>
-                                </li>
-                            </ul>    
-                        </div>
+                        <ul class="form-items">   
+                            <li>
+                                <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-pool" checked>
+                                <label class="form-label" for="infrastructure-pool">Бассейн</label>
+                                <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-parking">
+                                <label class="form-label" for="infrastructure-parking">Парковка</label>
+                                <input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-wifi">
+                                <label class="form-label" for="infrastructure-wifi">Wi-Fi</label>
+                            </li>
+                        </ul>                            
+                    </div>
                     <div class="filter-type">
                         <div class="form-title">Тип жилья</div>
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="house-type" id="house-type-hotel" checked>
-                                    <label class="form-label" for="house-type-hotel">Гостиница</label>
-                                </li>
-                            </ul>    
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="producers" id="house-type-motel" checked>
-                                    <label class="form-label" for="house-type-motel">Мотель</label>
-                                </li>
-                            </ul>
-                            <ul class="form-items">   
-                                <li>
-                                    <input class="form-checkbox" type="checkbox" name="producers" id="house-type-apartments" checked>
-                                    <label class="form-label" for="house-type-apartments">Апартаменты</label>
-                                </li>
-                            </ul>
+                        <ul class="form-items">   
+                            <li>
+                                <input class="form-checkbox" type="checkbox" name="house-type" id="house-type-hotel" checked>
+                                <label class="form-label" for="house-type-hotel">Гостиница</label>
+                                <input class="form-checkbox" type="checkbox" name="producers" id="house-type-motel" checked>
+                                <label class="form-label" for="house-type-motel">Мотель</label>
+                                <input class="form-checkbox" type="checkbox" name="producers" id="house-type-apartments" checked>
+                                <label class="form-label" for="house-type-apartments">Апартаменты</label>
+                            </li>
+                        </ul>    
                     </div>                 
                     <div class="filter-range">
                         <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -162,7 +147,7 @@
                     </article>      
                 </div>           
             </main>
-            <footer class="main-footer">
+            <footer class="main-footer clearfix">
                 <article class="footer-contacts">
                     <a href="#">#visitSedona</a>
                 </article>
@@ -172,7 +157,7 @@
                     <a class="social-btn icon-youtube" href="#"></a>
                 </article>
                 <article class="footer-copyright">
-                    <span>WEB SITE BY</span>
+                    <span>WEBSITE BY</span>
                     <a class="logo-htmlacademy" href="https://htmlacademy.ru">HTML Academy</a>
                 </article>
             </footer>

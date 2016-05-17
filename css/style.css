@@ -101,18 +101,16 @@ ul {
 }
 
 .main-header {
-    margin-bottom: -20px;
     padding: 0;
 }
 
 .main-navigation {
+    position: relative;
     margin: 0;
     padding-left: 6%;
     padding-right: 6%;
 }
 .main-navigation ul {
-    position: relative;
-    z-index: 20;
     list-style: none;
     font-size: 0;
     margin: 0;
@@ -121,25 +119,27 @@ ul {
 .main-navigation li {
     float: left;
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-size: 14px;
+    text-align: center;
     width: 20%;
     box-sizing: border-box;
 }
 
+.main-navigation li:first-child {
+    text-align: left
+}
+
 .main-navigation li:nth-child(2) {
-    padding-left: 30px;
-    text-align: left;
+    padding-right: 55px;
 }
 
 .main-navigation li:nth-child(4) {
-    margin-left: 178px;
-    text-align: right;
+    padding-left: 60px;
 }
 
 .main-navigation li:last-child {
     float: right;
-    margin-left: -178px;
     text-align: right;
 }
 
@@ -159,8 +159,10 @@ ul {
 
 .logo-nav {
     position: absolute;
-    top: -15px;
-    left: 43.5%
+    top: 0;
+    z-index: 20;
+    left: 50%;
+    margin-left: -69px;
 }
 
 .logo-nav a {
@@ -198,34 +200,42 @@ ul {
     background-color: #eeeeee;
 }
 
-.home {
-    display: block;
+.features-description p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    max-width: 285px;
+}
+
+.home:before {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -37px;
+    content: "";
     width: 75px;
     height: 72px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
     background: url("../img/sprite.png") no-repeat -10px -177px;
 }
 
-.eat {
-    display: block;
+.eat:before {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -37px;
+    content: "";
     width: 74px;
     height: 70px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
     background: url("../img/sprite.png") no-repeat -10px -87px;
 }
 
-.souvenir {
-    display: block;
+.souvenir:before {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -32px;
+    content: "";
     width: 64px;
     height: 76px;
-    margin-top: 56px;
-    margin-left: auto;
-    margin-right: auto;
     background: url("../img/sprite.png") no-repeat -10px -269px;
 }
 
@@ -235,6 +245,7 @@ ul {
 }
 
 .plus {
+    position: relative;
     background-color: #ffffff;   
 }
 
@@ -243,7 +254,7 @@ ul {
 }
 
 .plus b {
-    padding-top: 26px;
+    padding-top: 159px;
     padding-bottom: 23px;
 }
 
@@ -254,14 +265,13 @@ ul {
 }
 .town {
     height: 256px;
-    background: url("../img/true-city.jpg") no-repeat;
+    background: #5d6a7b url("../img/true-city.jpg") no-repeat;
     background-size: cover;
 }
 
-
 .canyon {
     height: 256px;
-    background: url("../img/bridge-of-devil.jpg") no-repeat;
+    background: #dfa990 url("../img/bridge-of-devil.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -280,11 +290,6 @@ ul {
 .features-description b {
     
     text-align: center;
-}
-
-.features-description p {
-    margin: 0 auto;
-    max-width: 285px;
 }
 
 .features-name {
@@ -324,7 +329,9 @@ ul {
 
 .booking p {
     text-align: center;
+    margin: 0 auto;
     padding-bottom: 50px;
+    max-width: 576px;
 }
 
 .booking-form {
@@ -362,11 +369,13 @@ ul {
     padding-top: 7px;
     padding-bottom: 6px;
     padding-left: 10px;
+    padding-right: 40px;
     border: none;
     background-color: #f2f2f2;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 26px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -413,7 +422,8 @@ ul {
     margin-right: -6px;
     padding-top: 8px;
     padding-bottom: 4px;
-    padding-left: 0;
+    padding-left: 35px;
+    padding-right: 35px;
     text-align: center;
 }
 
@@ -423,7 +433,8 @@ ul {
     margin-right: -6px;
     padding-top: 8px;
     padding-bottom: 4px;
-    padding-left: 0;
+    padding-left: 35px;
+    padding-right: 35px;
     text-align: center;
 }
 
@@ -582,20 +593,23 @@ ul {
 
 .map {
     width: 100%;
-    height: 475px;
-    background: url("../img/map.jpg") no-repeat;
+    height: 473px;
+    background: #d7e3bd url("../img/map.jpg") no-repeat;
 }
 
 .map iframe {
     width:100%;
-    height: 475px;
+    height: 590px;
     border: none; 
 }
 
 .main-footer {
+    position: relative;
     text-align: center;
     width: 100%;
-    padding-top: 34px;
+    padding-top: 36px;
+    padding-bottom: 9px;
+    background-color: rgba(255,255,255, 0.9);
     box-sizing: border-box;
 }
 
@@ -634,8 +648,9 @@ ul {
     font-size: 19px;
     line-height: 20px;
     color: #ffffff;
-    padding: 14px 11px;
-    margin-right: 3px;
+    padding: 14px 12px;
+    margin: 0;
+    margin-right: 2px;
     margin-bottom: 30px;
 }
 
@@ -651,10 +666,12 @@ ul {
     float: right;
     width: 33%;
     margin-left: -1px;
+    
 }
 
 .logo-htmlacademy {
-    display: inline-block;  
+    display: inline-block;
+    vertical-align: top;
     width: 113px;
     height: 39px;
     margin-top: 5px;
@@ -675,12 +692,13 @@ ul {
 .footer-copyright span {
     display: inline-block;
     vertical-align: top;
-    margin-top: 13px;
-    margin-right: 4px;
+    margin-top: 11px;
+    margin-right: 1px;
     margin-left: -6px;
 }
 .search-filters {
     width: 100%;
+    padding-top: 20px;
     padding-left: 6%;
     padding-right: 6%;
     margin-bottom: 26px;
@@ -705,13 +723,11 @@ ul {
     font-weight: 700;
 }
 
-.form-items li {
-    margin-bottom: 25px;
-}
 
 .search-filters label {
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 25px;
 }
 
 .search-filters span {
@@ -727,9 +743,9 @@ ul {
 
 .filter-infrastructure {
     float: left;
-    width: 20%;
-    min-width: 200px;
-    margin-right: 45px;
+    width: 15%;
+    min-width: 150px;
+    margin-right: 97px;
     margin-left: -1px;
     padding-top: 6px;
 }
@@ -743,15 +759,15 @@ ul {
 
 
 input[type="checkbox"] {
-  display: none;
+    display: none;
 }
 
 .form-checkbox + .form-label {
-  position: relative;
-  padding-left: 42px;
-  font-size: 14px;
-  line-height: 21px;
-  cursor: pointer;
+    position: relative;
+    padding-left: 42px;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
 }
 
 .form-checkbox + .form-label::before {

@@ -5,7 +5,7 @@
         <title>Седона</title>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container clearfix">
@@ -14,10 +14,11 @@
                     <ul class="clearfix">
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
-                        <li class="logo-nav"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
+                        <li></li>
                         <li><a href="#">Карта штата</a></li>
                         <li><a href="catalog.html">Гостиницы</a></li>
                     </ul>
+                    <div class="logo-nav"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="На главную"></a></li>
                 </nav>
             </header>
             <main class="clearfix">
@@ -35,18 +36,15 @@
                         <div class="features-picture town"></div>
                     </div>
                     <div class="feature-row plus">
-                        <div class="features-description">
-                            <span class="home"></span>
+                        <div class="features-description home">
                             <b class="features-name">Жилье</b>
                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                         </div>
-                        <div class="features-description">
-                            <span class="eat"></span>   
+                        <div class="features-description eat">
                             <b class="features-name">Еда</b>
                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </div>
-                        <div class="features-description">
-                           <span class="souvenir"></span>
+                        <div class="features-description souvenir">
                             <b class="features-name">Сувениры</b>
                             <p>Не только китайского, но и местного производства</p>
                         </div>    
@@ -82,7 +80,7 @@
                     <p>Укажите предпологаемые даты поездки,<br>
                     и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                     <div class="booking-button">
-                        <a href="#">Поиск гостиницы в Седоне</a>
+                        <a class="booking-link" href="booking.html">Поиск гостиницы в Седоне</a>
                     </div>
                     <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
                         <fieldset class="form-row">  
@@ -114,7 +112,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608777.5125344915!2d-112.0902682840164!3d35.02390257664038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1463054759337" allowfullscreen></iframe>
                 </div>
             </main>
-            <footer class="main-footer">
+            <footer class="main-footer clearfix">
                 <article class="footer-contacts">
                     <a href="#">#visitSedona</a>
                 </article>
@@ -124,7 +122,7 @@
                     <a class="social-btn icon-youtube" href="#"></a>
                 </article>
                 <article class="footer-copyright">
-                    <span>WEB SITE BY</span>
+                    <span>WEBSITE BY</span>
                     <a class="logo-htmlacademy" href="https://htmlacademy.ru">HTML Academy</a>
                 </article>
             </footer>
